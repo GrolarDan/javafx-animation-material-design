@@ -21,13 +21,16 @@
         <!-- JAVA FX -->            
         <javafx.version>18</javafx.version>
         <javafx.plugin.version>0.0.8</javafx.plugin.version>
+        <jfoenix.version>9.0.10</jfoenix.version>
         
+        <!-- Utils -->
         <projectlombok.version>1.18.20</projectlombok.version>
         <slf4j.version>1.7.32</slf4j.version>
     </properties>
       
     <dependencyManagement>
         <dependencies>
+            <!-- Java FX -->
             <dependency>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-controls</artifactId>
@@ -38,7 +41,13 @@
                 <artifactId>javafx-fxml</artifactId>
                 <version>${javafx.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.jfoenix</groupId>
+                <artifactId>jfoenix</artifactId>
+                <version>${jfoenix.version}</version>
+            </dependency>
 
+            <!-- Utils -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
