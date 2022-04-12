@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.basics.PrimaryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXRippler maskType="CIRCLE" prefHeight="64.0" prefWidth="152.0" />
-      <JFXHamburger />
-      <JFXDrawersStack prefHeight="49.0" prefWidth="152.0" />
-      <JFXButton prefHeight="54.0" prefWidth="97.0" />
-      <Label text="Primary View" />
-      <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Switch to Secondary View" />
+      <JFXButton id="btn" layoutX="240.0" layoutY="172.0" prefHeight="57.0" prefWidth="120.0" style="-fx-background-color: #f69;" text="Button 1" textFill="WHITE" />
    </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
-</VBox>
+</AnchorPane>
