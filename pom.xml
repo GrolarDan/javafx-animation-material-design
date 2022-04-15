@@ -105,6 +105,11 @@
                             <!-- Default configuration for running -->
                             <!-- Usage: mvn clean javafx:run -->
                             <id>default-cli</id>
+                            <configuration>
+                                <options>
+                                    <option>--add-opens=java.base/java.lang.reflect=ALL-UNNAMED</option>
+                                </options>
+                            </configuration>
                         </execution>
                         <execution>
                             <!-- Configuration for manual attach debugging -->
@@ -146,5 +151,6 @@
   
     <modules>
         <module>sec-03-basics</module>
+        <module>sec-04-login-simple</module>
     </modules>
 </project>

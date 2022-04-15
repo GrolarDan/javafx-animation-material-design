@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="60.0" layoutY="52.0" prefHeight="430.0" prefWidth="680.0" style="-fx-background-color: #fff; -fx-background-radius: 40px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.615686297416687" green="0.615686297416687" blue="0.615686297416687" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="301.0" layoutY="46.0" text="Sign In" textFill="#000dfd">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="262.0" layoutY="85.0" prefHeight="39.0" prefWidth="156.0" text="Hello there, start you app to manage your store" textAlignment="CENTER" textFill="#9e9e9e" wrapText="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#ff03b8" labelFloat="true" layoutX="230.0" layoutY="169.0" prefHeight="25.0" prefWidth="220.0" promptText="Username" />
+            <JFXPasswordField focusColor="#ff03b8" labelFloat="true" layoutX="230.0" layoutY="236.0" prefHeight="25.0" prefWidth="220.0" promptText="Password" />
+            <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="312.0" prefHeight="39.0" prefWidth="97.0" style="-fx-background-color: #ff03b8; -fx-background-radius: 50px;" text="Get Started" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="127.0" layoutY="391.0" prefHeight="25.0" prefWidth="156.0" text="Forgot password" textAlignment="CENTER" textFill="#9e9e9e" wrapText="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="340.0" layoutY="391.0" prefHeight="25.0" prefWidth="156.0" text="Create new account" textAlignment="CENTER" textFill="#9e9e9e" wrapText="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
