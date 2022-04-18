@@ -21,7 +21,8 @@
         <!-- JAVA FX -->            
         <javafx.version>18</javafx.version>
         <javafx.plugin.version>0.0.8</javafx.plugin.version>
-        <jfoenix.version>9.0.10</jfoenix.version>
+        <!--<jfoenix.version>9.0.10</jfoenix.version>-->
+        <materialfx.version>11.13.4</materialfx.version>
         
         <!-- Utils -->
         <projectlombok.version>1.18.20</projectlombok.version>
@@ -41,12 +42,19 @@
                 <artifactId>javafx-fxml</artifactId>
                 <version>${javafx.version}</version>
             </dependency>
-            <dependency>
+            <!-- Old Google Material Design. There are problems with new Java versions -->
+<!--            <dependency>
                 <groupId>com.jfoenix</groupId>
                 <artifactId>jfoenix</artifactId>
                 <version>${jfoenix.version}</version>
+            </dependency>-->
+            <!--New Google's material design. In description successor to JFoenix library-->
+            <dependency>
+                <groupId>io.github.palexdev</groupId>
+                <artifactId>materialfx</artifactId>
+                <version>${materialfx.version}</version>
             </dependency>
-
+            
             <!-- Utils -->
             <dependency>
                 <groupId>org.projectlombok</groupId>

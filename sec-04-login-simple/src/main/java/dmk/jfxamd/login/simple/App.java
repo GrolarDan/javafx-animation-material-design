@@ -6,6 +6,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.StageStyle;
 
@@ -35,6 +37,11 @@ public class App extends Application {
             stage.setTitle("signin");
             stage.setScene(scene);
             stage.show();
+            stage.addEventHandler(KeyEvent.KEY_RELEASED, key -> {
+                if (KeyCode.ESCAPE == key.getCode()) {
+                    stage.close();
+                }
+            });
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

@@ -28,8 +28,8 @@
             <artifactId>javafx-fxml</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.jfoenix</groupId>
-            <artifactId>jfoenix</artifactId>
+            <groupId>io.github.palexdev</groupId>
+            <artifactId>materialfx</artifactId>
         </dependency>
     </dependencies>
     
