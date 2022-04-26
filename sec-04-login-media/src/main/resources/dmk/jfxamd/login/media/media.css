@@ -1,0 +1,87 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24. 4. 2022, 21:50:18
+    Author     : Daniel
+*/
+
+.mfx-text-field {
+    -fx-text-fill: red;
+    -fx-highlight-fill: #66ff66;
+
+    -fx-font-weight: bold;
+    -fx-font-size: 14pt;
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+
+    -fx-border-color: transparent transparent black transparent;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 2;
+}
+
+.mfx-text-field:focus-within {
+    -fx-border-color: transparent transparent darkblue transparent;
+}
+
+.mfx-text-field .floating-text {
+    -fx-font-weight: normal;
+    -fx-background-color: transparent;
+}
+
+.mfx-text-field:floating .floating-text {
+    -fx-text-fill: darkblue;
+}
+
+/*
+.mfx-text-field {
+    -mfx-float-mode: INLINE;
+    -mfx-gap: 5px;
+
+    -fx-padding: 5 0 3 5;
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+
+    -fx-border-color: transparent transparent gray transparent;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 1.5;
+
+    -fx-text-fill: white;
+    -fx-font-height: 22px;
+}
+
+.mfx-text-field:focus-within {
+    -fx-border-color: transparent transparent blue transparent;
+
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.mfx-text-field .text-field {
+    -fx-highlight-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-height: 22px;
+}
+
+.mfx-text-field .floating-text {
+    -fx-text-fill: white;
+    -fx-font-height: 22px;
+}
+
+.mfx-text-field:floating .floating-text {
+    -fx-background-color: transparent;
+}
+
+.mfx-text-field:focus-within .floating-text {
+    -fx-text-fill: white;
+
+    -fx-background-color: transparent;
+}
+*/

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="800.0" stylesheets="@media.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.media.MainController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="477.0" fitWidth="800.0" />
+      <Pane layoutX="438.0" layoutY="14.0" prefHeight="416.0" prefWidth="348.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 75px;">
+         <children>
+            <Label layoutX="113.0" layoutY="51.0" text="YOUR LOGO" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <MFXTextField id="whitePrompt" fx:id="username" floatingText="USERNAME" layoutX="60.0" layoutY="115.0" opacity="0.52" prefHeight="66.0" prefWidth="228.0" />
+            <MFXPasswordField fx:id="password" floatingText="PASSWORD" layoutX="60.0" layoutY="208.0" opacity="0.5" prefHeight="66.0" prefWidth="228.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
