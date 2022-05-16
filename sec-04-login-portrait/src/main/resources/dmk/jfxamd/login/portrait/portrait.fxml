@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="rootPane" prefHeight="630.0" prefWidth="400.0" stylesheets="@portrait.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.portrait.PortraitController">
+   <children>
+      <Pane layoutX="50.0" layoutY="92.0" prefHeight="450.0" prefWidth="300.0" style="-fx-background-color: #ffffffff; -fx-background-radius: 56px;">
+         <children>
+            <MFXTextField id="title" alignment="CENTER" allowEdit="false" animated="false" caretVisible="false" editable="false" floatMode="DISABLED" floatingTextGap="0.0" focusTraversable="false" prefHeight="70.0" prefWidth="300.0" selectable="false" text="SYSTEM NAME">
+               <textFill>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.8700000047683716" />
+               </textFill>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MFXTextField>
+            <ImageView fx:id="image" fitHeight="70.0" fitWidth="70.0" layoutX="115.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2cf7c5ba-bbc3-4a1a-b097-168476d0217f-Glamouros-logo-design-01-1.png" />
+               </image>
+            </ImageView>
+            <MFXTextField id="input" fx:id="username" floatingText="username" layoutX="41.0" layoutY="168.0" prefHeight="48.0" prefWidth="220.0" />
+            <MFXPasswordField id="input" fx:id="password" floatingText="password" layoutX="41.0" layoutY="233.0" prefHeight="48.0" prefWidth="220.0" />
+            <MFXButton id="button" fx:id="btnSIgnin" buttonType="RAISED" depthLevel="LEVEL3" layoutX="41.0" layoutY="324.0" onAction="#click" prefHeight="36.0" prefWidth="110.0" rippleColor="#036f49" rippleRadius="56.0" text="SIGNIN" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </MFXButton>
+            <MFXButton id="button" buttonType="RAISED" depthLevel="LEVEL3" layoutX="151.0" layoutY="324.0" prefHeight="36.0" prefWidth="110.0" rippleColor="#036f49" rippleRadius="56.0" text="SIGNUP" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

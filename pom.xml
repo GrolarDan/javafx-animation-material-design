@@ -46,7 +46,12 @@
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-media</artifactId>
                 <version>${javafx.version}</version>
-            </dependency>            
+            </dependency>     
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-graphics</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>       
             <!--New Google's material design. In description successor to JFoenix library-->
             <dependency>
                 <groupId>io.github.palexdev</groupId>
@@ -54,7 +59,7 @@
                 <version>${materialfx.version}</version>
             </dependency>
             <!-- Old Google Material Design. There are problems with new Java versions -->
-<!--            <dependency>
+            <!--            <dependency>
                 <groupId>com.jfoenix</groupId>
                 <artifactId>jfoenix</artifactId>
                 <version>${jfoenix.version}</version>
@@ -166,5 +171,6 @@
         <module>sec-03-basics</module>
         <module>sec-04-login-simple</module>
         <module>sec-04-login-media</module>
+        <module>sec-04-login-portrait</module>
     </modules>
 </project>

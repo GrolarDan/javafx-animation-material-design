@@ -1,0 +1,56 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1. 5. 2022, 15:50:30
+    Author     : Daniel
+*/
+
+* {
+    -dmk-background: #00A46B;
+    -dmk-dark-background: #036f49;
+}
+
+#rootPane {
+    -fx-background-image: url(photo-1464306208223-e0b4495a5553.jpg)
+}
+
+#title {
+    -fx-background-color: -dmk-background;
+    -fx-background-radius: 56px 56px 0px 0px;
+    -fx-background-insets: 0;
+    -fx-border-width: 0px;
+}
+
+#input {
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 0px;
+}
+
+#input:focus-within {
+    -fx-border-color: -dmk-background;
+}
+
+#input:focus-within .floating-text {
+    -fx-text-fill: -dmk-background;
+}
+
+#icon {
+    -fx-opacity: 0.35;
+    -fx-scale-x: 0.5;
+    -fx-scale-y: 0.5;
+}
+
+#button {
+    -fx-background-color: -dmk-background;
+    -fx-background-radius: 56px;
+}
+
+#button:focused {
+    -fx-background-color: -dmk-dark-background;
+}
+
+#button:armed {
+    -fx-background-color: -dmk-background;
+}
