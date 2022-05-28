@@ -1,5 +1,6 @@
 package dmk.jfxamd.login.portrait;
 
+import java.util.Objects;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,7 +17,7 @@ public class App extends Application {
     private Stage stage;
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         this.stage = stage;
 
         initMainWindow();
@@ -28,7 +29,7 @@ public class App extends Application {
             AnchorPane pane = fxmlLoader.load();
 
             Scene scene = new Scene(pane);
-            scene.getStylesheets().addAll(App.class.getResource("portrait.css").toExternalForm());
+            scene.getStylesheets().addAll(Objects.requireNonNull(App.class.getResource("portrait.css")).toExternalForm());
             stage.setTitle("Login with portrait");
             stage.setScene(scene);
             stage.show();
