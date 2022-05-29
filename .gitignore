@@ -36,3 +36,5 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+/sec-04-login-media/src/main/resources/dmk/jfxamd/login/media/2017_04_30_One_day.mp4
+/archetype/src/main/resources/archetype-resources/archetype-resources (1).iml
