@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.slided.SlidedController">
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="930.0" stylesheets="@slided.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.slided.SlidedController">
+   <children>
+      <Pane fx:id="slide1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="slide2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="slide3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="slide4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane prefHeight="440.0" prefWidth="320.0" style="-fx-background-color: white; -fx-background-radius: 50px;" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <MFXTextField alignment="CENTER" allowEdit="false" animated="false" caretVisible="false" floatMode="DISABLED" layoutX="60.0" layoutY="67.0" prefHeight="50.0" prefWidth="200.0" selectable="false" style="-fx-background-color: white; -fx-border-width: 0px;" text="Your logo">
+               <textFill>
+                  <Color red="0.6196078658103943" green="0.6196078658103943" blue="0.6196078658103943" opacity="0.8700000047683716" />
+               </textFill>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MFXTextField>
+            <MFXTextField id="input" borderGap="13.0" floatMode="ABOVE" floatingText="Username" layoutX="60.0" layoutY="148.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: #0887ff; -fx-border-radius: 50px;">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </MFXTextField>
+            <MFXPasswordField borderGap="13.0" floatMode="ABOVE" floatingText="Password" layoutX="60.0" layoutY="220.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: #0887ff; -fx-border-radius: 50px;">
+               <padding>
+                  <Insets left="15.0" right="10.0" />
+               </padding>
+            </MFXPasswordField>
+            <MFXButton layoutX="60.0" layoutY="294.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #0887ff; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="GET STARTED" textAlignment="CENTER" textFill="WHITE" />
+            <MFXButton layoutX="60.0" layoutY="355.0" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: white;" text="LOST PASSWORD" textFill="#0ab88c" underline="true" />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

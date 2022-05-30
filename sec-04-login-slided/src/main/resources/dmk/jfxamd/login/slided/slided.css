@@ -7,3 +7,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : Daniel
 */
 
+#input:focus-within {
+    -fx-text-fill: #405aa8;
+}
+
+#input {
+    -fx-text-fill: #4d4d4d;
+}
