@@ -2,17 +2,17 @@
 
 <?import io.github.palexdev.materialfx.controls.*?>
 <?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-
 <AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="930.0" stylesheets="@slided.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.slided.SlidedController">
    <children>
-      <Pane fx:id="slide1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Pane fx:id="slide2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Pane fx:id="slide3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Pane fx:id="slide4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane id="slide1" fx:id="slide1" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane id="slide2" fx:id="slide2" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane id="slide3" fx:id="slide3" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane id="slide4" fx:id="slide4" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Pane prefHeight="440.0" prefWidth="320.0" style="-fx-background-color: white; -fx-background-radius: 50px;" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0">
          <children>
             <MFXTextField alignment="CENTER" allowEdit="false" animated="false" caretVisible="false" floatMode="DISABLED" layoutX="60.0" layoutY="67.0" prefHeight="50.0" prefWidth="200.0" selectable="false" style="-fx-background-color: white; -fx-border-width: 0px;" text="Your logo">
@@ -36,6 +36,13 @@
             <MFXButton layoutX="60.0" layoutY="294.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #0887ff; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="GET STARTED" textAlignment="CENTER" textFill="WHITE" />
             <MFXButton layoutX="60.0" layoutY="355.0" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: white;" text="LOST PASSWORD" textFill="#0ab88c" underline="true" />
          </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7236841917037964" green="0.7236841917037964" blue="0.7236841917037964" />
+               </color>
+            </DropShadow>
+         </effect>
       </Pane>
    </children>
 </AnchorPane>

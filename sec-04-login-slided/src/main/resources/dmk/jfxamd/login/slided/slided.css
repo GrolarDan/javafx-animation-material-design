@@ -14,3 +14,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 #input {
     -fx-text-fill: #4d4d4d;
 }
+
+#slide1 {
+    -fx-background-image: url(1.jpg);
+}
+
+#slide2 {
+    -fx-background-image: url(2.jpg);
+}
+
+#slide3 {
+    -fx-background-image: url(3.jpg);
+}
+
+#slide4 {
+    -fx-background-image: url(4.jpg);
+}
