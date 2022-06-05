@@ -170,6 +170,7 @@
         <module>sec-04-login-media</module>
         <module>sec-04-login-portrait</module>
         <module>sec-04-login-slided</module>
+        <module>sec-04-login-dark</module>
     </modules>
 
 </project>

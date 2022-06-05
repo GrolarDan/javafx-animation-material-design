@@ -12,6 +12,7 @@
         <module name="sec-04-login-slided" />
         <module name="sec-03-basics" />
         <module name="sec-04-login-portrait" />
+        <module name="sec-04-login-dark" />
       </profile>
     </annotationProcessing>
   </component>
