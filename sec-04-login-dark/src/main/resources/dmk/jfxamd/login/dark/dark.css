@@ -7,3 +7,30 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : Daniel
 */
 
+#input .mfx-text-field:focus-within .text-field {
+    -fx-text-fill: red;
+}
+/*#input .text-field .text {*/
+/*    -fx-background-color: #FFFFFF22;*/
+/*    -fx-highlight-text-fill: #09bb11;*/
+/*    -fx-highlight-fill: #da0000;*/
+/*    -fx-accent: green;*/
+/*}*/
+
+/*#input .text-field {*/
+/*    -fx-background-color: #FFFFFF22;*/
+/*    -fx-highlight-text-fill: #09bb11;*/
+/*    -fx-highlight-fill: #da0000;*/
+/*}*/
+
+/*#input .text-field:focused {*/
+/*    -fx-focus-color: blue;*/
+/*}*/
+
+/*#input {*/
+/*    -fx-accent: green;*/
+/*}*/
+
+/*#input .mfx-text-field {*/
+/*    -fx-background-color: #FFFFFF22;*/
+/*}*/

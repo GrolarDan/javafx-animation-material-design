@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.dark.DarkController">
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.dark.DarkController">
+   <children>
+      <ImageView fitHeight="851.0" fitWidth="563.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dark.jpg" />
+         </image>
+      </ImageView>
+      <MFXTextField alignment="CENTER" allowEdit="false" animated="false" borderGap="0.0" caretVisible="false" editable="false" floatMode="DISABLED" floatingTextGap="0.0" graphicTextGap="0.0" layoutX="247.0" layoutY="78.0" maxHeight="70.0" maxWidth="70.0" measureUnitGap="0.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" selectable="false" style="-fx-background-color: #ffffff00; -fx-border-radius: 50px; -fx-border-width: 2px;" text="M">
+         <textFill>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </textFill>
+         <font>
+            <Font name="Juice ITC" size="26.0" />
+         </font>
+      </MFXTextField>
+      <Label layoutX="154.0" layoutY="169.0" prefHeight="55.0" prefWidth="257.0" text="HELLO THERE! SIGNIN TO START YOUR FIRST SESSION" textAlignment="CENTER" textFill="#ffffffd0" wrapText="true" />
+      <MFXTextField id="input" borderGap="20.0" floatMode="ABOVE" floatingText="USERNAME" layoutX="97.0" layoutY="279.0" prefHeight="55.0" prefWidth="370.0" style="-fx-background-color: #FFFFFF22; -fx-border-width: 0px; -fx-background-radius: 50px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </MFXTextField>
+   </children>
 </AnchorPane>
