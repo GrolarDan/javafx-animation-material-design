@@ -24,7 +24,7 @@
          </font>
       </MFXTextField>
       <Label layoutX="154.0" layoutY="169.0" prefHeight="55.0" prefWidth="257.0" text="HELLO THERE! SIGNIN TO START YOUR FIRST SESSION" textAlignment="CENTER" textFill="#ffffffd0" wrapText="true" />
-      <MFXTextField id="input" borderGap="20.0" floatMode="ABOVE" floatingText="USERNAME" layoutX="97.0" layoutY="279.0" prefHeight="55.0" prefWidth="370.0" style="-fx-background-color: #FFFFFF22; -fx-border-width: 0px; -fx-background-radius: 50px;">
+      <MFXTextField id="input" borderGap="20.0" floatMode="ABOVE" floatingText="USERNAME" layoutX="97.0" layoutY="279.0" prefHeight="55.0" prefWidth="370.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -32,5 +32,6 @@
             <Insets left="15.0" />
          </padding>
       </MFXTextField>
+      <TextField id="custom" layoutX="97.0" layoutY="360.0" prefHeight="55.0" prefWidth="370.0" />
    </children>
 </AnchorPane>
