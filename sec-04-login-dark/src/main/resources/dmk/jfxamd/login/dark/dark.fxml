@@ -8,7 +8,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.dark.DarkController">
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="563.0" stylesheets="@dark.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dmk.jfxamd.login.dark.DarkController">
    <children>
       <ImageView fitHeight="851.0" fitWidth="563.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -32,6 +32,19 @@
             <Insets left="15.0" />
          </padding>
       </MFXTextField>
-      <TextField id="custom" layoutX="97.0" layoutY="360.0" prefHeight="55.0" prefWidth="370.0" />
+      <MFXPasswordField id="input" borderGap="20.0" floatMode="ABOVE" floatingText="PASSWORD" layoutX="98.0" layoutY="367.0" prefHeight="55.0" prefWidth="370.0">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </MFXPasswordField>
+      <TextField id="custom" layoutX="98.0" layoutY="753.0" prefHeight="55.0" prefWidth="370.0" />
+      <MFXCheckbox gap="0.0" layoutX="110.0" layoutY="452.0" prefHeight="20.0" prefWidth="143.0" style="-mfx-main: #0077e7;" text="Keep me signed in" textFill="WHITE" />
+      <MFXButton layoutX="98.0" layoutY="503.0" prefHeight="55.0" prefWidth="370.0" style="-fx-background-color: #0077e7; -fx-background-radius: 50px;" text="SIGNIN" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MFXButton>
+      <Separator layoutX="82.0" layoutY="634.0" opacity="0.12" prefHeight="5.0" prefWidth="401.0" />
+      <MFXButton computeRadiusMultiplier="false" depthLevel="LEVEL0" layoutX="230.0" layoutY="663.0" rippleAnimateBackground="false" style="-fx-background-color: transparent;" text="Forgot password" textFill="#ffffff22" underline="true" />
    </children>
 </AnchorPane>

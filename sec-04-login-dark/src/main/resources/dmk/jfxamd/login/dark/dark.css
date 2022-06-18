@@ -8,8 +8,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 */
 
 #input {
-    -fx-background-color: #00FF0022;
+    -fx-background-color: #FFFFFF22;
     -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-width: 0px;
 }
 
 #input .text-field {
