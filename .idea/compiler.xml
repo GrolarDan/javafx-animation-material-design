@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sec-04-login-media" />
+        <module name="sec-05-signup-image" />
         <module name="sec-04-login-simple" />
         <module name="sec-04-login-slided" />
         <module name="sec-03-basics" />

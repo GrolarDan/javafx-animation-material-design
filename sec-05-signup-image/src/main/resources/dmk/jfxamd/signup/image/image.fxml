@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="1073.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="dmk.jfxamd.signup.image.ImageController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="737.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nikhil-kumar-231465.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="641.0" prefWidth="733.0" style="-fx-background-color: #5F0082BB;">
+         <children>
+            <Label layoutX="48.0" layoutY="192.0" prefHeight="103.0" prefWidth="295.0" text="Create Your Own Account" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei" size="33.0" />
+               </font>
+            </Label>
+            <MFXButton layoutX="48.0" layoutY="308.0" prefHeight="43.0" prefWidth="124.0" style="-fx-background-radius: 10px;" text="ABOUT US" textFill="#5f0082">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXButton layoutX="190.0" layoutY="308.0" prefHeight="43.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 10px;" text="SIGNIN" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </Pane>
+      <MFXTextField floatingText="FIRST NAME" layoutX="754.0" layoutY="69.0" prefHeight="49.0" prefWidth="295.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-radius: 0px;" />
+      <MFXTextField floatingText="LAST NAME" layoutX="754.0" layoutY="126.0" prefHeight="49.0" prefWidth="295.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-radius: 0px;" />
+      <MFXTextField floatingText="USERNAME" layoutX="754.0" layoutY="187.0" prefHeight="49.0" prefWidth="295.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-radius: 0px;" />
+      <MFXTextField floatingText="E-MAIL" layoutX="754.0" layoutY="250.0" prefHeight="49.0" prefWidth="295.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-radius: 0px;" />
+      <MFXPasswordField floatingText="PASSWORD" layoutX="754.0" layoutY="312.0" prefHeight="49.0" prefWidth="295.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 2 0; -fx-border-radius: 0px;" />
+      <MFXPasswordField floatingText="PASSWORD" layoutX="754.0" layoutY="370.0" prefHeight="49.0" prefWidth="295.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 2 0; -fx-border-radius: 0px;" />
+      <MFXTextField floatingText="PHONE NUMBER" layoutX="754.0" layoutY="427.0" prefHeight="49.0" prefWidth="295.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-radius: 0px;" />
+      <MFXToggleButton layoutX="761.0" layoutY="490.0" text="UNDER 18 ?" />
+      <MFXButton layoutX="761.0" layoutY="544.0" prefHeight="43.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-color: #5F0082; -fx-border-radius: 10px;" text="GET STARTED" textFill="#5f0082" />
+   </children>
+</AnchorPane>
