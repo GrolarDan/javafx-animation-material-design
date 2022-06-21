@@ -38,3 +38,42 @@ build/
 !**/src/test/**/build/
 /sec-04-login-media/src/main/resources/dmk/jfxamd/login/media/2017_04_30_One_day.mp4
 /archetype/src/main/resources/archetype-resources/archetype-resources (1).iml
+
+# User-specific stuff:
+**/.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/compiler.xml
+.idea/**/modules.xml
+.idea/**/misc.xml
+.idea/**/typescript-compiler.xml
+.idea/**/kotlinc.xml
+.idea/**/.name
+.idea/**/checkstyle-idea.xml
+.idea/**/vcs.xml
+.idea/**/sonarIssues.xml
+.idea/**/encodings.xml
+.idea/**/jarRepositories.xml
+.idea/dictionaries
+.idea/copyright
+.idea/inspectionProfiles
+.idea/libraries
+.idea/sonarlint
+.idea/codeStyles
+.idea/terraform.xml
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# IntelliJ
+/out/
+
+## File-based project format:
+*.iml
+*.iws
