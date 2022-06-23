@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="757.0" prefWidth="504.0" stylesheets="@pink.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="dmk.jfxamd.signup.pink.PinkController">
+   <children>
+      <ImageView fitHeight="757.0" fitWidth="649.0" layoutX="181.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-88.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@ian-dooley-298769.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="83.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff939397;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="63.0" prefHeight="71.0" prefWidth="70.0" style="-fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 50px;" text="M" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="210.0" layoutY="150.0" text="SIGNUP" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <MFXTextField id="input" borderGap="25.0" floatMode="BORDER" floatingText="Name" layoutX="97.0" layoutY="205.0" measureUnitGap="0.0" prefHeight="49.0" prefWidth="310.0" style="-fx-border-width: 0px; -fx-background-color: #FFFFFF67; -fx-background-radius: 50px;">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <textFill>
+                  <Color red="0.29019609093666077" green="0.29019609093666077" blue="0.29019609093666077" opacity="0.8700000047683716" />
+               </textFill>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXTextField>
+            <MFXTextField id="input" borderGap="25.0" floatMode="BORDER" floatingText="Address" layoutX="97.0" layoutY="278.0" measureUnitGap="0.0" prefHeight="49.0" prefWidth="310.0" style="-fx-border-width: 0px; -fx-background-color: #FFFFFF67; -fx-background-radius: 50px;">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <textFill>
+                  <Color red="0.29019609093666077" green="0.29019609093666077" blue="0.29019609093666077" opacity="0.8700000047683716" />
+               </textFill>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXTextField>
+            <MFXTextField id="input" borderGap="25.0" floatMode="BORDER" floatingText="Username" layoutX="97.0" layoutY="354.0" measureUnitGap="0.0" prefHeight="49.0" prefWidth="310.0" style="-fx-border-width: 0px; -fx-background-color: #FFFFFF67; -fx-background-radius: 50px;">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <textFill>
+                  <Color red="0.29019609093666077" green="0.29019609093666077" blue="0.29019609093666077" opacity="0.8700000047683716" />
+               </textFill>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXTextField>
+            <MFXTextField id="input" borderGap="25.0" floatMode="BORDER" floatingText="Phone Number" layoutX="97.0" layoutY="428.0" measureUnitGap="0.0" prefHeight="49.0" prefWidth="310.0" style="-fx-border-width: 0px; -fx-background-color: #FFFFFF67; -fx-background-radius: 50px;">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <textFill>
+                  <Color red="0.29019609093666077" green="0.29019609093666077" blue="0.29019609093666077" opacity="0.8700000047683716" />
+               </textFill>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXTextField>
+            <MFXPasswordField id="input" borderGap="25.0" floatMode="BORDER" floatingText="Password" layoutX="97.0" layoutY="506.0" prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #FFFFFF67; -fx-border-width: 0px; -fx-background-radius: 50px;">
+               <padding>
+                  <Insets left="20.0" right="10.0" />
+               </padding>
+            </MFXPasswordField>
+            <MFXToggleButton id="toggle" layoutX="97.0" layoutY="582.0" prefHeight="41.0" prefWidth="310.0" text="Under 18 ?" textExpand="true" textFill="WHITE" />
+            <MFXButton layoutX="97.0" layoutY="640.0" prefHeight="35.0" prefWidth="310.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 50px;" text="Get Started" textFill="#fffafa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

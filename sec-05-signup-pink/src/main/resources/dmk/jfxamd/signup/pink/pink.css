@@ -1,0 +1,22 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1. 5. 2022, 15:50:30
+    Author     : Daniel
+*/
+
+#input .floating-text {
+    -fx-text-fill: #4a4a4ade;
+}
+
+#input:floating .floating-text {
+    -fx-background-color: transparent;
+    -fx-padding: 20 0 20 0;
+}
+
+#toggle {
+    -mfx-main: #ff5353;
+    -mfx-secondary: white;
+}
