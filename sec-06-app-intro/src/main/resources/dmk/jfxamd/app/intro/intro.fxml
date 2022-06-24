@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="791.0" prefWidth="597.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="dmk.jfxamd.app.intro.IntroController">
+   <children>
+      <AnchorPane fx:id="slide1" layoutY="128.0" onSwipeLeft="#nextSwipe" onSwipeRight="#previousSwipe" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0090e4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="238.0" layoutY="133.0" text="Slide 1 title" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="187.0" layoutY="176.0" prefHeight="74.0" prefWidth="224.0" text="Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong description" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label alignment="CENTER" layoutX="228.0" layoutY="355.0" prefHeight="170.0" prefWidth="143.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 5px; -fx-border-color: #00000022;" text="Slide 1" textFill="#979797">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="slide2" layoutX="10.0" layoutY="138.0" onSwipeLeft="#nextSwipe" onSwipeRight="#previousSwipe" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00b871;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="238.0" layoutY="133.0" text="Slide 2 title" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="187.0" layoutY="176.0" prefHeight="74.0" prefWidth="224.0" text="Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong description" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label alignment="CENTER" layoutX="228.0" layoutY="355.0" prefHeight="170.0" prefWidth="143.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 5px; -fx-border-color: #00000022;" text="Slide 2" textFill="#979797">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="slide3" layoutX="10.0" layoutY="138.0" onSwipeLeft="#nextSwipe" onSwipeRight="#previousSwipe" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff5e5e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="238.0" layoutY="133.0" text="Slide 3 title" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="187.0" layoutY="176.0" prefHeight="74.0" prefWidth="224.0" text="Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong description" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label alignment="CENTER" layoutX="228.0" layoutY="355.0" prefHeight="170.0" prefWidth="143.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 5px; -fx-border-color: #00000022;" text="Slide 3" textFill="#979797">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <MFXButton buttonType="RAISED" layoutX="86.0" layoutY="697.0" onAction="#previousClick" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 50px; -fx-background-color: #00000017;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </MFXButton>
+      <Label fx:id="pageLabel" layoutX="281.0" layoutY="705.0" text="1/3" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MFXButton buttonType="RAISED" layoutX="470.0" layoutY="697.0" onAction="#nextClick" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 50px; -fx-background-color: #00000017;" text="&gt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </MFXButton>
+   </children>
+</AnchorPane>

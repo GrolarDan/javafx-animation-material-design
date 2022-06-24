@@ -172,6 +172,7 @@
         <module>sec-04-login-slided</module>
         <module>sec-05-signup-image</module>
         <module>sec-05-signup-pink</module>
+        <module>sec-06-app-intro</module>
     </modules>
 
 </project>
