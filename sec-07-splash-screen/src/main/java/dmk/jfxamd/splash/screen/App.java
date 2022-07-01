@@ -27,10 +27,12 @@ public class App extends Application {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("splashscreen.fxml"));
             AnchorPane pane = fxmlLoader.load();
+            SplashScreenController splashScreenController = fxmlLoader.getController();
+            splashScreenController.setCloseCallback(stage::close);
 
             Scene scene = new Scene(pane);
             scene.getStylesheets().addAll(App.class.getResource("splashscreen.css").toExternalForm());
-//            stage.initStyle(StageStyle.UNDECORATED);
+            stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("SEC 07-01 : Splash - Screen");
             stage.setScene(scene);
             stage.show();
