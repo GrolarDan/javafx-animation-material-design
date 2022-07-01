@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.StageStyle;
 
 /**
  * JavaFX App
@@ -29,6 +30,7 @@ public class App extends Application {
 
             Scene scene = new Scene(pane);
             scene.getStylesheets().addAll(App.class.getResource("splashscreen.css").toExternalForm());
+//            stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("SEC 07-01 : Splash - Screen");
             stage.setScene(scene);
             stage.show();
