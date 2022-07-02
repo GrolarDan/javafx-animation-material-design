@@ -1,8 +1,10 @@
 package dmk.jfxamd.splash.screen;
 
+import dmk.jfxamd.utilities.transition.FadeTransitionBuilder;
+import dmk.jfxamd.utilities.transition.TransitionPlayer;
+import dmk.jfxamd.utilities.transition.TranslateTransitionBuilder;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.function.Function;
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.concurrent.Task;
@@ -43,25 +45,20 @@ public class SplashScreenController implements Initializable {
    */
   @Override
   public void initialize(URL url, ResourceBundle rb) {
-    spinnerPane.setOpacity(0.0);
+        spinnerPane.setOpacity(0.0);
 
-    logoLabel.setTranslateY(700);
-    titleLabel.setTranslateY(700);
-    helloLabel.setTranslateY(700);
+        logoLabel.setTranslateY(700);
+        titleLabel.setTranslateY(700);
+        helloLabel.setTranslateY(700);
 
-    var logoTransition = translateTransition(logoLabel, 1, 0, -700);
-    var titleTransition = translateTransition(titleLabel, 1, 0, -700);
-    var helloTransition = translateTransition(helloLabel, 1, 0, -700);
-    var spinnerTransition = fadeTransition(spinnerPane, 1, 0, 1);
-    var rootPaneTransition = fadeTransition(rootPane, 5, 1, 0.1);
+    var transitionPlayer = new TransitionPlayer();
+    transitionPlayer.add(TranslateTransitionBuilder.builder().withByY(-700).withNode(logoLabel).withDuration(Duration.seconds(1)));
+    transitionPlayer.add(TranslateTransitionBuilder.builder().withByY(-700).withNode(titleLabel).withDuration(Duration.seconds(1)));
+    transitionPlayer.add(TranslateTransitionBuilder.builder().withByY(-700).withNode(helloLabel).withDuration(Duration.seconds(1)));
+    transitionPlayer.add(FadeTransitionBuilder.builder().withFromValue(0).withToValue(1).withNode(spinnerPane).withDuration(Duration.seconds(1)));
+    transitionPlayer.add(FadeTransitionBuilder.builder().withFromValue(1).withToValue(0.1).withNode(rootPane).withDuration(Duration.seconds(3)).withOnFinishedHandler(this::close));
 
-    logoTransition.setOnFinished(actionEvent -> titleTransition.play());
-    titleTransition.setOnFinished(actionEvent -> helloTransition.play());
-    helloTransition.setOnFinished(actionEvent -> spinnerTransition.play());
-    spinnerTransition.setOnFinished(actionEvent -> rootPaneTransition.play());
-    rootPaneTransition.setOnFinished(this::close);
-
-    logoTransition.play();
+    transitionPlayer.play();
   }
 
   public void setCloseCallback(CloseCallback closeCallback) {
@@ -73,27 +70,6 @@ public class SplashScreenController implements Initializable {
       closeCallback.run();
       System.out.println("------ splash screen closed ------");
     }
-  }
-
-  // TODO: Move to utils
-  private TranslateTransition translateTransition(Node node, double duration, double byX, double byY) {
-    TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(duration), node);
-
-    translateTransition.setByX(byX);
-    translateTransition.setByY(byY);
-//    translateTransition.play();
-
-    return translateTransition;
-  }
-
-  private FadeTransition fadeTransition(Node node, double duration, double from, double to) {
-    FadeTransition fadeTransition = new FadeTransition(Duration.seconds(duration), node);
-
-    fadeTransition.setFromValue(from);
-    fadeTransition.setToValue(to);
-//    fadeTransition.play();
-
-    return fadeTransition;
   }
 
   // TODO: Move to utils

@@ -1,115 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-      
-  <modelVersion>4.0.0</modelVersion>
-      
-  <groupId>dmk.jfxamd</groupId>
-      
-  <artifactId>javafx-animation-material-design</artifactId>
-      
-  <version>1.0-SNAPSHOT</version>
-      
-  <packaging>pom</packaging>
-      
-  <name>* JavaFX - Animation And Material Design Course *</name>
-      
-  <properties>
-            
-    <main.class>override</main.class>
-            
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            
-    <java.version>17</java.version>
-            
-    <maven.compiler.version>3.10.1</maven.compiler.version>
-            
-    <maven.compiler.source>${java.version}</maven.compiler.source>
-            
-    <maven.compiler.target>${java.version}</maven.compiler.target>
-            
-    <!-- JAVA FX -->
-            
-    <javafx.version>18</javafx.version>
-            
-    <javafx.plugin.version>0.0.8</javafx.plugin.version>
-            
-    <!--<jfoenix.version>9.0.10</jfoenix.version>-->
-            
-    <materialfx.version>11.13.4</materialfx.version>
-            
-    <!-- Utils -->
-            
-    <projectlombok.version>1.18.20</projectlombok.version>
-            
-    <slf4j.version>1.7.32</slf4j.version>
-        
-  </properties>
-      
-  <dependencyManagement>
-            
-    <dependencies>
-                  
-      <!-- Java FX -->
-                  
-      <dependency>
-                        
-        <groupId>org.openjfx</groupId>
-                        
-        <artifactId>javafx-controls</artifactId>
-                        
-        <version>${javafx.version}</version>
-                    
-      </dependency>
-                  
-      <dependency>
-                        
-        <groupId>org.openjfx</groupId>
-                        
-        <artifactId>javafx-fxml</artifactId>
-                        
-        <version>${javafx.version}</version>
-                    
-      </dependency>
-                  
-      <dependency>
-                        
-        <groupId>org.openjfx</groupId>
-                        
-        <artifactId>javafx-media</artifactId>
-                        
-        <version>${javafx.version}</version>
-                    
-      </dependency>
-                  
-      <dependency>
-                        
-        <groupId>org.openjfx</groupId>
-                        
-        <artifactId>javafx-graphics</artifactId>
-                        
-        <version>${javafx.version}</version>
-                    
-      </dependency>
-                  
-      <!--New Google's material design. In description successor to JFoenix library-->
-                  
-      <dependency>
-                        
-        <groupId>io.github.palexdev</groupId>
-                        
-        <artifactId>materialfx</artifactId>
-                        
-        <version>${materialfx.version}</version>
-                    
-      </dependency>
-                  
-      <!-- Old Google Material Design. There are problems with new Java versions -->
-                  
-      <!--            <dependency>
-                      <groupId>com.jfoenix</groupId>
-                      <artifactId>jfoenix</artifactId>
-                      <version>${jfoenix.version}</version>
-                  </dependency>-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>dmk.jfxamd</groupId>
+    <artifactId>javafx-animation-material-design</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>* JavaFX - Animation And Material Design Course *</name>
+
+    <properties>
+        <main.class>override</main.class>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+        <maven.compiler.version>3.10.1</maven.compiler.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+
+        <!-- JAVA FX -->
+        <javafx.version>18</javafx.version>
+        <javafx.plugin.version>0.0.8</javafx.plugin.version>
+        <!--<jfoenix.version>9.0.10</jfoenix.version>-->
+        <materialfx.version>11.13.4</materialfx.version>
+
+        <!-- Utils -->
+        <projectlombok.version>1.18.20</projectlombok.version>
+        <slf4j.version>1.7.32</slf4j.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Project utilities -->
+            <dependency>
+                <groupId>dmk.jfxamd</groupId>
+                <artifactId>utilities</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- Java FX -->
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-controls</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-fxml</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-media</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-graphics</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+
+            <!--New Google's material design. In description successor to JFoenix library-->
+            <dependency>
+                <groupId>io.github.palexdev</groupId>
+                <artifactId>materialfx</artifactId>
+                <version>${materialfx.version}</version>
+            </dependency>
+
+            <!-- Old Google Material Design. There are problems with new Java versions -->
+            <!--            <dependency>
+                            <groupId>com.jfoenix</groupId>
+                            <artifactId>jfoenix</artifactId>
+                            <version>${jfoenix.version}</version>
+                        </dependency>-->
             <!-- Utils -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -154,6 +116,13 @@
                     <version>${maven.compiler.version}</version>
                     <configuration>
                         <release>${java.version}</release>
+                        <annotationProcessorPaths>
+                            <path>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                                <version>${projectlombok.version}</version>
+                            </path>
+                        </annotationProcessorPaths>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -222,6 +191,7 @@
         <module>sec-05-signup-pink</module>
         <module>sec-06-app-intro</module>
         <module>sec-07-splash-screen</module>
+        <module>utilities</module>
     </modules>
 
 </project>
