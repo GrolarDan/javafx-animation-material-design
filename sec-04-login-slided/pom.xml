@@ -29,6 +29,10 @@
             <groupId>io.github.palexdev</groupId>
             <artifactId>materialfx</artifactId>
         </dependency>
+        <dependency>
+            <groupId>dmk.jfxamd</groupId>
+            <artifactId>utilities</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
