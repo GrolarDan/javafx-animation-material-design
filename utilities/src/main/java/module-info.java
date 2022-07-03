@@ -5,4 +5,6 @@ module dmk.jfxamd.utilities {
   requires org.slf4j;
 
   exports dmk.jfxamd.utilities.transition;
+  exports dmk.jfxamd.utilities.callback;
+  exports dmk.jfxamd.utilities.common;
 }

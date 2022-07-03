@@ -1,4 +1,4 @@
-package dmk.jfxamd.splash.screen;
+package dmk.jfxamd.utilities.callback;
 
 @FunctionalInterface
 public interface CloseCallback {

@@ -1,17 +1,14 @@
 package dmk.jfxamd.splash.screen;
 
+import dmk.jfxamd.utilities.callback.CloseCallback;
 import dmk.jfxamd.utilities.transition.FadeTransitionBuilder;
 import dmk.jfxamd.utilities.transition.TransitionPlayer;
 import dmk.jfxamd.utilities.transition.TranslateTransitionBuilder;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.animation.FadeTransition;
-import javafx.animation.TranslateTransition;
-import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -72,28 +69,4 @@ public class SplashScreenController implements Initializable {
     }
   }
 
-  // TODO: Move to utils
-  public static void delay(long millis, Runnable continuation) {
-    Task<Void> sleeper = new SleepTask(millis);
-    sleeper.setOnSucceeded(event -> continuation.run());
-    new Thread(sleeper).start();
-  }
-
-  private static final class SleepTask extends Task<Void> {
-    private final long millis;
-
-    private SleepTask(long millis) {
-      this.millis = millis;
-    }
-
-    @Override
-    protected Void call() throws Exception {
-      try {
-        Thread.sleep(millis);
-        System.out.println("Ended sleep");
-      } catch (InterruptedException e) {
-      }
-      return null;
-    }
-  }
 }
