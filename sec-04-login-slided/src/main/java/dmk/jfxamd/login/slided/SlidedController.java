@@ -1,17 +1,15 @@
 package dmk.jfxamd.login.slided;
 
+import dmk.jfxamd.utilities.transition.FadeTransitionBuilder;
+import dmk.jfxamd.utilities.transition.TransitionBuilder;
+import dmk.jfxamd.utilities.transition.TransitionPlayer;
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
-import java.util.stream.Collectors;
-import javafx.animation.FadeTransition;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.Node;
-import javafx.util.Duration;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.layout.Pane;
+import javafx.util.Duration;
 
 /**
  * FXML Controller class
@@ -19,9 +17,6 @@ import javafx.scene.layout.Pane;
  * @author Daniel
  */
 public class SlidedController implements Initializable {
-
-  @FXML
-  private Pane slide1;
 
   @FXML
   private Pane slide2;
@@ -37,39 +32,32 @@ public class SlidedController implements Initializable {
    */
   @Override
   public void initialize(URL url, ResourceBundle rb) {
-    var slide1fadeOut = createFadeOut(slide1);
-    var slide2fadeOut = createFadeOut(slide2);
-    var slide3fadeOut = createFadeOut(slide3);
-    var slide4fadeOut = createFadeOut(slide4);
-    var slide1fadeIn = createFadeIn(slide1);
-    var slide2fadeIn = createFadeIn(slide2);
-    var slide3fadeIn = createFadeIn(slide3);
-    var slide4fadeIn = createFadeIn(slide4);
+    var transitionPlayer = new TransitionPlayer();
 
-    slide4fadeOut.setOnFinished(actionEvent -> slide3fadeOut.play());
-    slide3fadeOut.setOnFinished(actionEvent -> slide2fadeOut.play());
-    slide2fadeOut.setOnFinished(actionEvent -> slide1fadeOut.play());
-    slide1fadeOut.setOnFinished(actionEvent -> slide1fadeIn.play());
-    slide1fadeIn.setOnFinished(actionEvent -> slide2fadeIn.play());
-    slide2fadeIn.setOnFinished(actionEvent -> slide3fadeIn.play());
-    slide3fadeIn.setOnFinished(actionEvent -> slide4fadeIn.play());
-    slide4fadeIn.setOnFinished(actionEvent -> slide4fadeOut.play());
+    transitionPlayer.add(createFadeOutBuilder(slide4));
+    transitionPlayer.add(createFadeOutBuilder(slide3));
+    transitionPlayer.add(createFadeOutBuilder(slide2));
+    transitionPlayer.add(createFadeInBuilder(slide2));
+    transitionPlayer.add(createFadeInBuilder(slide3));
+    transitionPlayer.add(createFadeInBuilder(slide4));
 
-    slide4fadeOut.play();
+    transitionPlayer.playInfinite();
   }
 
-  private FadeTransition createFadeIn(Node node) {
-    return createFadeTransition(0.0, 1.0, node);
+  private TransitionBuilder<?> createFadeInBuilder(Node node) {
+    return createFadeTransitionBuilder(0, 1, node);
   }
-  private FadeTransition createFadeOut(Node node) {
-    return createFadeTransition(1.0, 0.0, node);
-  }
-  private FadeTransition createFadeTransition(double from, double to, Node node) {
-    FadeTransition fadeTransition = new FadeTransition(Duration.millis(3000.0));
-    fadeTransition.setFromValue(from);
-    fadeTransition.setToValue(to);
-    fadeTransition.setNode(node);
 
-    return fadeTransition;
+  private TransitionBuilder<?> createFadeOutBuilder(Node node) {
+    return createFadeTransitionBuilder(1, 0, node);
   }
+
+  private TransitionBuilder<?> createFadeTransitionBuilder(double fromValue, double toValue, Node node) {
+    return FadeTransitionBuilder.builder()
+        .withFromValue(fromValue)
+        .withToValue(toValue)
+        .withDuration(Duration.millis(3000))
+        .withNode(node);
+  }
+
 }

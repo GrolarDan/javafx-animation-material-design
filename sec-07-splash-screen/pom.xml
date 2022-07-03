@@ -8,12 +8,12 @@
     </parent>
     
     <groupId>dmk.jfxamd</groupId>
-    <artifactId>sec-04-login-slided</artifactId>
+    <artifactId>sec-07-splash-screen</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>SEC 04-04 : Login - Slided</name>
+    <name>SEC 07-01 : Splash - Screen</name>
     
     <properties>
-        <main.class>dmk.jfxamd.login.slided/dmk.jfxamd.login.slided.App</main.class>
+        <main.class>dmk.jfxamd.splash.screen/dmk.jfxamd.splash.screen.App</main.class>
     </properties>
     
     <dependencies>
