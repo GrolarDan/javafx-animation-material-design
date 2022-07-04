@@ -1,0 +1,24 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1. 5. 2022, 15:50:30
+    Author     : Daniel
+*/
+
+#pane1 {
+    -fx-background-image: url(1.jpg);
+}
+
+#pane2 {
+    -fx-background-image: url(2.jpg);
+}
+
+#pane3 {
+    -fx-background-image: url(3.jpg);
+}
+
+#pane4 {
+    -fx-background-image: url(4.jpg);
+}

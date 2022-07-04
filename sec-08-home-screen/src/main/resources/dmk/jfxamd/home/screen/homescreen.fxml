@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1335.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="dmk.jfxamd.home.screen.HomeScreenController">
+   <children>
+      <AnchorPane prefHeight="54.0" prefWidth="1335.0" style="-fx-background-color: #04afff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="pane1" layoutY="54.0" prefHeight="310.0" prefWidth="200.0" stylesheets="@homescreen.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+      <AnchorPane fx:id="pane2" layoutY="54.0" prefHeight="310.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+      <AnchorPane fx:id="pane3" layoutY="54.0" prefHeight="310.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+      <AnchorPane fx:id="pane4" layoutY="54.0" prefHeight="310.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+   </children>
+</AnchorPane>
