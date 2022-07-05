@@ -191,6 +191,7 @@
         <module>sec-05-signup-pink</module>
         <module>sec-06-app-intro</module>
         <module>sec-07-splash-screen</module>
+        <module>sec-08-home-screen</module>
         <module>utilities</module>
     </modules>
 
