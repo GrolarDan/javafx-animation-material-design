@@ -22,3 +22,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 #pane4 {
     -fx-background-image: url(4.jpg);
 }
+
+#homeMiddleBTNs {
+    -fx-background-color: #00cc7a;
+}
+
+#homeMiddleBTNs:hover {
+    -fx-background-color: #ff895e;
+}
+
+#homeEdgeBTNs {
+    -fx-background-color: #04afff;
+}
+
+#homeEdgeBTNs:hover {
+    -fx-background-color: #ff895e;
+}
