@@ -25,6 +25,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 #homeMiddleBTNs {
     -fx-background-color: #00cc7a;
+    -fx-background-radius: 0;
 }
 
 #homeMiddleBTNs:hover {
@@ -33,8 +34,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 #homeEdgeBTNs {
     -fx-background-color: #04afff;
+    -fx-background-radius: 0;
 }
 
 #homeEdgeBTNs:hover {
     -fx-background-color: #ff895e;
+}
+
+#menuBtn:hover {
+    -fx-background-color: #ff895e;
+    -fx-text-fill: black;
 }
