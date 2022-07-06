@@ -23,6 +23,7 @@
         <javafx.plugin.version>0.0.8</javafx.plugin.version>
         <!--<jfoenix.version>9.0.10</jfoenix.version>-->
         <materialfx.version>11.13.4</materialfx.version>
+        <ikonli.version>12.3.1</ikonli.version>
 
         <!-- Utils -->
         <projectlombok.version>1.18.20</projectlombok.version>
@@ -72,6 +73,16 @@
                             <artifactId>jfoenix</artifactId>
                             <version>${jfoenix.version}</version>
                         </dependency>-->
+
+            <!-- Icons -->
+            <dependency>
+                <groupId>org.kordamp.ikonli</groupId>
+                <artifactId>ikonli-bom</artifactId>
+                <version>${ikonli.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <!-- Utils -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
