@@ -1,8 +1,15 @@
 package dmk.jfxamd.utilities.common;
 
+import com.github.javafaker.Faker;
 import javafx.concurrent.Task;
 
-public class Commons {
+public class Utils {
+
+  private static final Faker FAKER = Faker.instance();
+
+  public static Faker faker() {
+    return FAKER;
+  }
 
   public static void delay(long millis, Runnable continuation) {
     Task<Void> sleeper = new SleepTask(millis);

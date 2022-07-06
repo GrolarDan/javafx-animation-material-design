@@ -22,12 +22,14 @@
         <javafx.version>18</javafx.version>
         <javafx.plugin.version>0.0.8</javafx.plugin.version>
         <!--<jfoenix.version>9.0.10</jfoenix.version>-->
-        <materialfx.version>11.13.4</materialfx.version>
+        <materialfx.version>11.13.5</materialfx.version>
+        <virtualizedfx.version>11.2.6</virtualizedfx.version>
         <ikonli.version>12.3.1</ikonli.version>
 
         <!-- Utils -->
         <projectlombok.version>1.18.20</projectlombok.version>
         <slf4j.version>1.7.32</slf4j.version>
+        <faker.version>1.0.2</faker.version>
     </properties>
 
     <dependencyManagement>
@@ -66,6 +68,11 @@
                 <artifactId>materialfx</artifactId>
                 <version>${materialfx.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.github.palexdev</groupId>
+                <artifactId>virtualizedfx</artifactId>
+                <version>${virtualizedfx.version}</version>
+            </dependency>
 
             <!-- Old Google Material Design. There are problems with new Java versions -->
             <!--            <dependency>
@@ -99,6 +106,11 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
                 <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.javafaker</groupId>
+                <artifactId>javafaker</artifactId>
+                <version>${faker.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
