@@ -203,6 +203,7 @@
         <module>sec-06-app-intro</module>
         <module>sec-07-splash-screen</module>
         <module>sec-08-home-screen</module>
+        <module>sec-09-management-table</module>
         <module>utilities</module>
     </modules>
 
