@@ -36,10 +36,15 @@ public class ManagementTableController implements Initializable {
     MFXTableColumn<Person> ageColumn = new MFXTableColumn<>("AGE", true);
     MFXTableColumn<Person> genderColumn = new MFXTableColumn<>("GENDER", true);
 
+    double columnWidth = table.getPrefWidth()/4;
     nameColumn.setRowCellFactory(createTableRowCell(Person::getName));
+    nameColumn.setPrefWidth(columnWidth);
     jobColumn.setRowCellFactory(createTableRowCell(Person::getJob));
+    jobColumn.setPrefWidth(columnWidth);
     ageColumn.setRowCellFactory(createTableRowCell(Person::getAge));
+    ageColumn.setPrefWidth(columnWidth);
     genderColumn.setRowCellFactory(createTableRowCell(Person::getGender));
+    genderColumn.setPrefWidth(columnWidth);
 
     table.getTableColumns().addAll(nameColumn, jobColumn, ageColumn, genderColumn);
     table.setItems(initData(10));
@@ -50,7 +55,7 @@ public class ManagementTableController implements Initializable {
     var faker = Utils.faker();
 
     for (int i = 0; i < count; i++) {
-      list.add(new Person(faker.name().name(), faker.job().title(), String.valueOf(faker.random().nextInt(100)), faker.bool().bool() ? "Male" : "Female"));
+      list.add(new Person(faker.name().name(), faker.job().title(), String.valueOf(faker.random().nextInt(20, 100)), faker.bool().bool() ? "Male" : "Female"));
     }
 
     return FXCollections.observableList(list);
